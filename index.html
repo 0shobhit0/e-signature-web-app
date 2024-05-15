@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Signature</title>
+</head>
+<body>
+    <div>
+        <div class="flex flex-row justify-center gap-24 ml-[20px] mt-[20px]" id="top">
+            <div id="black">
+                <p>Text Color Picker</p>
+                <input class="form-control" type="color" id="colorPicker"/>
+            </div>
+            <div id="black">
+                <p>Background</p>
+                <input class="form-control" type="color" id="canvasColor"/>
+            </div>
+            <div id="black">
+                <p>Font Size</p>
+                <select id="fontPicker">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                </select>
+            </div>
+        </div>
+       <canvas class="canvas border-4 border-black ml-[23vw]"
+       id="mycanvas" width="800"
+       height="500"></canvas>
+       <div class="flex flex-row justify-center gap-24 ml-[20px] mt-[20px]" id="button">
+        <button type="button" class="btn-btn-danger bg-blue-500" id="clearButton">Clear</button>
+        <button type="button" class="btn btn-sucess bg-green-600" id="saveButton">Save & Download</button>
+        <button type="button" class="btn btn-warning bg-red-800" id="RetrieveButton">Retrieve saved Signature</button>
+       </div>
+    </div>
+
+
+     <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
